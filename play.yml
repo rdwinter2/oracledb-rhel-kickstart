@@ -1,4 +1,4 @@
 ---
-- hosts: example
+- hosts: all
   tasks:
     - debug: msg="{{ lookup('env','BUILD_TAG') }}"
