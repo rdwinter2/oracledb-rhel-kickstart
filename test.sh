@@ -8,7 +8,7 @@ cd $OLDPWD
     -i ${WORKSPACE}/inventory \
     --forks 5 --syntax-check
     
-/opt/ansible/bin/ansible-playbook -v \
+env ANSIBLE_FORCE_COLOR=1  /opt/ansible/bin/ansible-playbook -v \
     ${WORKSPACE}/play.yml \
     -i ${WORKSPACE}/inventory \
     --forks 5
